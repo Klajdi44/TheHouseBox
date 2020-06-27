@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 :root {
   --clr-icons: #929292;
   --clr-text: #fff;
@@ -11,6 +13,7 @@
   --clr-bg-ligh: #3b3b3b;
   --clr-accent: #ff7600;
 }
+
 
 body {
   margin: 1.2em;
