@@ -44,12 +44,11 @@ img {
   left: 0;
   top: 45%;
   z-index: -1;
-
 }
 
 .btn:hover::after,
 .btn:focus::after {
-  transform: scale(1.5);
+  transform: scale(1.5, 1.8);
   transform-origin: bottom left;
   transition: 250ms ease-in-out;
 }
@@ -90,4 +89,31 @@ footer {
 .secondary-images {
   display: flex;
   gap: 0.5em;
+}
+
+
+@media(min-width: 730px) {
+
+  body {
+    margin: 0;
+  }
+
+  .main-grid {
+    display: grid;
+    grid-template-columns:
+      minmax(1em, 1fr) repeat(3, minmax(10rem, 30rem)) minmax(1em, 1fr);
+    gap: 2em;
+  }
+
+  header {
+    grid-column: 2/5;
+  }
+
+  main {
+    grid-column: 2/-1;
+  }
+
+
+
+
 }
